@@ -1,0 +1,92 @@
+/* Useful stuff and generic styling */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300';
+*, *:after, *:before {box-sizing: border-box;}
+body {
+  font-family: "Open Sans",sans-serif;
+  color: inherit;
+  background: rgba(40,70,100,1);
+  font-size: 12px;
+  padding: 10vh 0 0 0;
+}
+
+
+.container1,.container2,.container3,.container4,.container5,.container6 {
+  width: 400px;
+  margin: 13px;
+  background: rgba(0,0,0,.25);
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  float:left;
+}
+.major{
+	padding-left: 2em;
+	margin-left: 5px;
+  padding-top: 8em;
+}
+p{
+	color: white;
+	font-size: 20px;
+}
+
+/* THE IMPORTANT BITS */
+
+#seating polygon {
+  fill: rgb(206, 156, 104);
+  transition: ease fill .5s;
+}
+#seating polygon:hover {
+  fill: #ED2D36;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+legend{border:0;padding:0;}
+.legend {
+  list-style: none;
+  margin: 1em 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.legend__item {
+  font-size: 0.85em;
+  font-weight: bold;
+  margin: 0 18px 22px 3px;
+  display: inline-block;
+ 
+}
+
+.legend__item::before {
+  content: '';
+  width: 20px;
+  height: 05px;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  border-radius: 2px;
+  background: rgb(206, 156, 104);
+}
+
+.legend__item--reserved::before {
+  background: #de6363;
+}
+
+.legend__item--selected::before,
+.rows--mini .row__seat--selected,
+.rows--mini .row__seat--selected:hover {
+  background: #21c252;
+}
+
+.al{
+	font-size:3.7em;
+	color: cadetblue;
+}

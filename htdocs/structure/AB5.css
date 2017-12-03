@@ -1,0 +1,84 @@
+svg .seat:hover{
+  fill: red;
+  cursor:pointer;
+}
+.c1,.c2,.c3,.c4 {
+  width: 425px;
+  margin: 13px;
+  background: rgba(0,0,0,.25);
+  padding-left: 0em;
+  padding-right: 7.5em;
+  padding-top: 2em;
+  float:left;
+}
+.major{
+	padding-left: 15em;
+  padding-top: 8em;
+	
+}
+body{
+  background:rgba(40,70,100,1);
+}
+
+p{
+  color: white;
+  margin-left: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+legend{border:0;padding:0;}
+.legend {
+  list-style: none;
+  margin: 1em 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.legend__item {
+  font-size: 0.85em;
+  font-weight: bold;
+  margin: 0 18px 22px 3px;
+  display: inline-block;
+ 
+}
+
+.legend__item::before {
+  content: '';
+  width: 20px;
+  height: 05px;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  border-radius: 2px;
+  background: rgb(206, 156, 104);
+}
+
+.legend__item--reserved::before {
+  background: #de6363;
+}
+
+.legend__item--selected::before,
+.rows--mini .row__seat--selected,
+.rows--mini .row__seat--selected:hover {
+  background: #21c252;
+}
+
+.al{
+  font-size:3.7em;
+  color: cadetblue;
+}
